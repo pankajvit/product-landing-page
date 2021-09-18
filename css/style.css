@@ -1,8 +1,17 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Catamaran', sans-serif;
 }
+
+
+/* navbar style section starts here */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -10,24 +19,25 @@ body {
     width: 80%;
     color: black;
     margin: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .logo {
     padding: 13px;
-    font-size: 60px;
+    font-size: 40px;
     width: 70%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 .menu {
     width: 30%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 .menu  ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    top: 16px;
+    top: 12px;
+    left: -20px;
 }
 .menu ul li {
     list-style: none;
@@ -35,9 +45,131 @@ body {
 .menu ul li a {
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
 }
 .section-a {
     width: 80%;
     
 }
+
+/*navbar style section ends here */
+
+
+/*product about and picture section starts here */
+.section-a {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutProduct {
+    width: 50%;
+}
+.aboutProduct h1 {
+    font-size: 4rem;
+}
+.aboutProduct p {
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 50px;
+}
+.productImg {
+    width: 50%;
+}
+.productImg img {
+    width: 100%;
+    height: 100%;
+}
+.aboutProduct .btn {
+    display: inline-block;
+    background: black;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    position: relative;
+    bottom: 50px;
+}
+/*product about and picture section ends here */
+
+/*Product Feature Section starts here */
+.section-b {
+    width: 100%;
+    height: 400px;
+    background: url('https://i.ibb.co/1RS1dqC/section-b.jpg') no-repeat bottom center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.section-b h1 {
+    font-size: 5rem;
+    position: relative;
+    bottom: 60px;
+}
+.section-b h2 {
+    font-size: 2rem;
+}
+.section-b p {
+    font-size: 1rem;
+    position: relative;
+    bottom: 90px;
+}
+.section-b > * {
+    position: relative;
+    z-index: 3;
+}
+.section-b::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+/*Product Feature Section ends here */
+
+/*footer section starts here */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(27, 23, 23);
+    color: white;
+}
+.column-1, .column-2, .column-3, .column-4 {
+    display: flex;
+    flex-direction: column;
+}
+.column ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.email-subscription {
+    display: flex;
+}
+.inputBox {
+    width: 110px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 20px 0px 0px 20px;
+}
+.submitBtn {
+    width: 90px;
+    height: 37px;
+    padding: 0px 20px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/*footer section ends here */
