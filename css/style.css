@@ -138,22 +138,67 @@ body {
 }
 /*Product Feature Section ends here */
 
+
+/*Product picture gallery style starts here */
+.picture-col {
+    display: flex;
+}
+.gallery-img {
+    width: 200px;
+    height: 200px;
+}
+.col-image-1 {
+    width: 560px;
+    height: 608px;
+}
+.col-2-row-1-image {
+    width: 470px;
+    height: 290px;
+}
+.row-2 {
+    display: flex;
+}
+.col-2-row-2-col-1-image {
+    width: 250px;
+    height: 314px;
+}
+.col-2-row-2-col-2-image {
+    width: 221px;
+    height: 314px;
+}
+.col-3-row-1-image{
+    width: 315px;
+    height: 286px;
+}
+.col-3-row-2-image {
+    width: 315px;
+    height: 317px;
+}
+/*Product picture gallery style ends here */
+
+
 /*footer section starts here */
 footer {
     display: flex;
     justify-content: space-around;
     background-color: rgb(27, 23, 23);
     color: white;
+    height: 300px;
 }
 .column-1, .column-2, .column-3, .column-4 {
     display: flex;
     flex-direction: column;
 }
 .column ul li{
+    color: gray;
+    list-style: none;
+}
+.column ul {
+    height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    list-style: none;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .email-subscription {
     display: flex;
@@ -163,12 +208,14 @@ footer {
     height: 30px;
     background-color: black;
     color: white;
+    border: 1px solid white;
     border-radius: 20px 0px 0px 20px;
 }
 .submitBtn {
     width: 90px;
     height: 37px;
     padding: 0px 20px;
+    /* border: 1px solid white; */
     border-radius: 0px 20px 20px 0px;
 }
 
